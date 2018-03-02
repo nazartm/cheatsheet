@@ -1,6 +1,28 @@
 Git
 ===
 
+Remote
+------
+
+Hard reset to remote:
+
+    $ git fetch origin
+    $ git reset --hard origin/master
+	
+Stashing
+--------
+
+Save a stash under a name:
+    
+	$ git stash save "Name"
+	
+Popping, showing, applying:
+
+    $ git stash pop stash@{n}
+	$ git stash show stash@{n}
+	$ git stash apply  stash@{n}
+	
+
 Working with patches
 --------------------
 
