@@ -26,3 +26,7 @@ Format json:
 Check if host is reachable using netcat on given port:	
 	
 	$ nc -zv 192.0.0.5 22
+	
+Copy files to remote hosts:
+
+	$ scp -r sourcedir/ user@dest.com:/dest/dir/
