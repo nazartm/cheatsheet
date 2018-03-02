@@ -12,3 +12,11 @@ Add public key to authorized keys on remote:
 When editor doesn't work properly on ssh:
 
     $ export TERM=xterm
+	
+Proxying SSH using corkscrew:
+
+	$ ssh -i example.com -o "ProxyCommand /usr/local/bin/corkscrew proxy.example.com 8080 %h %p"
+	
+Forward autentication agent:
+
+	$ ssh -A user@remote
