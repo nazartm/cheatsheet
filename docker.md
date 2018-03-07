@@ -9,6 +9,10 @@ Remove all stopped processes:
 
 	$ docker rm $(docker ps -a -q)
 
+Remove dangling, untagged images:
+
+	$ docker rmi $(docker images -f "dangling=true" -q)
+
 Bash access:
 
 	$ docker exec -i -t <instance-id> /bin/bash
