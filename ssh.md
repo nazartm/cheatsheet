@@ -7,7 +7,11 @@ Generate SSH key:
 
 Add public key to authorized keys on remote:
 
-	cat id_rsa.pub | ssh user@remote.com 'cat >> .ssh/authorized_keys'	
+	cat id_rsa.pub | ssh user@remote.com 'cat >> .ssh/authorized_keys'
+	
+Fingerprint key:
+
+    $ ssh-keygen -E md5 -lf id_rsa.pub
 	
 When editor doesn't work properly on ssh:
 
