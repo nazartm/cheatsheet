@@ -34,3 +34,7 @@ Copy files to remote hosts:
 Sudo with current users environment variables:
 
     $ sudo -E <command>
+    
+## Systemctl
+
+    $ systemctl list-unit-files --state=enabled
