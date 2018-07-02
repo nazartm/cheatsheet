@@ -17,6 +17,10 @@ Commands
 See all tables:
 
     \d
+  
+Describe table:
+
+    \d+ tablename
 	
 Drop all tables:
 
