@@ -38,3 +38,7 @@ Sudo with current users environment variables:
 ## Systemctl
 
     $ systemctl list-unit-files --state=enabled
+    
+## View journal logs
+
+    $ journalctl -u nginx.service --since today
