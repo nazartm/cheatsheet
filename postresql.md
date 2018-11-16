@@ -29,3 +29,12 @@ Drop all tables:
 	GRANT ALL ON SCHEMA public TO postgres;
     GRANT ALL ON SCHEMA public TO public;
 	select 'drop table "' || tablename || '" cascade;' from pg_tables where schemaname = 'public';
+	
+Turn on timing:
+
+    \timing on
+    
+Analyze using:
+
+    EXPLAIN ANALYZE
+    SELECT * from books;
