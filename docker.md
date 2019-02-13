@@ -26,5 +26,9 @@ Provide environment variables:
 Mount current directory as volume and set it as working directory inside docker
 
     $ docker run -it --name my-maven-project -v "$(pwd)":/usr/src/mymaven -w /usr/src/mymaven maven:3.3-jdk-8 mvn clean install
+
+Override entrypoint with a different script
+
+    $ docker run --entrypoint myscript.sh hashicorp/terraform:light
   
   
