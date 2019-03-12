@@ -24,3 +24,16 @@ Proxying SSH using corkscrew:
 Forward autentication agent:
 
 	$ ssh -A user@remote
+	
+SSH config with jump host and agent forwarding:
+
+    Host bastion
+       User nazar
+       HostName bastion.example.com
+       ForwardAgent yes
+    Host server
+       User nazar
+       HostName server.example.com
+       ProxyJump bastion
+       ForwardAgent yes
+
