@@ -36,3 +36,14 @@ Generate build.properties with revision and build timestamp
           <shortRevisionLength>5</shortRevisionLength>
       </configuration>
     </plugin>
+    
+Run with lint:
+
+       <plugin>
+           <groupId>org.apache.maven.plugins</groupId>
+           <artifactId>maven-compiler-plugin</artifactId>
+           <version>3.8.0</version>
+           <configuration>
+               <compilerArgument>-Xlint:unchecked</compilerArgument>
+           </configuration>
+       </plugin>
