@@ -42,3 +42,7 @@ Sudo with current users environment variables:
 ## View journal logs
 
     $ journalctl -u nginx.service --since today
+    
+## Loop through files to do something:
+
+    $ for f in *.jpg; do echo "$f"; done
