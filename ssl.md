@@ -7,7 +7,7 @@ Export key from java keystore:
 
 Import cert to java keystore:
 
-        $ keytool -import -alias example -keystore cacerts -file rds-combined-ca-bundle.pem
+	$ keytool -import -alias example -keystore cacerts -file rds-combined-ca-bundle.pem
 
 Convert crt public key to pem:
 
@@ -16,3 +16,7 @@ Convert crt public key to pem:
 See certificate chain:
 
 	$ openssl s_client -connect example.com:443 -showcerts
+
+See certificate text:
+
+	$  openssl x509 -noout -text -in cert.pem
