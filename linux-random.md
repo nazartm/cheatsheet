@@ -17,7 +17,11 @@ What route will be used in route table to get to an address:
 Find and replace:
 
 	$ find ./ -type f -exec sed -i -e 's/apple/orange/g' {} \;
-	
+
+Find and replace with a backreference:
+
+    $ sed -E 's/\*([-A-ZÄÖÜÝŞŇÇŽa-zäöüýşňçž ]+)\*/\\emph{\1}/g'
+
 Format json:
 
 	$ echo '{"foo": "lorem", "bar": "ipsum"}' | python -mjson.tool
