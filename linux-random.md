@@ -50,3 +50,7 @@ Sudo with current users environment variables:
 ## Loop through files to do something:
 
     $ for f in *.jpg; do echo "$f"; done
+
+## Check which ports the server is listening on
+
+    $ netstat -antup
