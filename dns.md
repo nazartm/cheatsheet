@@ -3,6 +3,11 @@ DNS
 
 Commands related to troubleshooting DNS issues.
 
+host
+----
+    $ host -t CNAME enedilim.com
+    $ host -t a enedilim.com
+
 dig
 ---
 
