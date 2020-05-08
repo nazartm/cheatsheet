@@ -53,3 +53,7 @@ Apply the patch on the current branch:
 Apply the patch with sign-off:
 
 	$ git am --signoff < multiple-commits.patch
+	
+Credential caching
+
+    $ git config --global credential.helper 'store --file ~/.my-credentials'
