@@ -57,3 +57,7 @@ Apply the patch with sign-off:
 Credential caching
 
     $ git config --global credential.helper 'store --file ~/.my-credentials'
+
+Add new remote:
+
+    $ git remote add origin https://github.com/**/**.git
