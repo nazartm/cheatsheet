@@ -20,3 +20,7 @@ See certificate chain:
 See certificate text:
 
 	$  openssl x509 -noout -text -in cert.pem
+
+See expiry date:
+
+        $ openssl x509 -enddate -noout -in file.pem
