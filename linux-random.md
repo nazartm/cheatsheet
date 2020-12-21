@@ -54,3 +54,7 @@ Sudo with current users environment variables:
 ## Check which ports the server is listening on
 
     $ netstat -antup
+    
+## Execute as another user
+
+   $ sudo -u admin whoami
