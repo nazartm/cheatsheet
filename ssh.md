@@ -36,4 +36,8 @@ SSH config with jump host and agent forwarding:
        HostName server.example.com
        ProxyJump bastion
        ForwardAgent yes
+       
+Kill ssh-agent in current terminal
+
+    $ eval $(ssh-agent -k)
 
