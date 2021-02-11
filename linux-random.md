@@ -57,7 +57,7 @@ Sudo with current users environment variables:
     
 ## Execute as another user
 
-   $ sudo -u admin whoami
+    $ sudo -u admin whoami
    
 ## Tracing 
 
