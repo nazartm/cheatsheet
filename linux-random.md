@@ -58,3 +58,7 @@ Sudo with current users environment variables:
 ## Execute as another user
 
    $ sudo -u admin whoami
+   
+## Tracing 
+
+   $ tcptraceroute my-site.com 443
