@@ -62,3 +62,5 @@ Sudo with current users environment variables:
 ## Tracing 
 
    $ tcptraceroute my-site.com 443
+   # equivalent to
+   $ traceroute -T -O info -p 443  my-site.com
