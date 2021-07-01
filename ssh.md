@@ -4,6 +4,8 @@ SSH
 Generate SSH key:
 
 	$ ssh-keygen -t rsa -b 4096 -C "nazar@example.com"
+	# convert OpenSSH format to old PEM
+	$ ssh-keygen -p -m PEM -f path-to-id_rsa	
 
 Add public key to authorized keys on remote:
 
