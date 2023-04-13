@@ -64,3 +64,18 @@ Sudo with current users environment variables:
     $ tcptraceroute my-site.com 443
     # equivalent to
     $ traceroute -T -O info -p 443  my-site.com
+    
+## Setting up user:
+
+Create user with home directory
+
+    $ useradd -m batman
+
+Add user to group
+
+    # usermod -a -G groupname username
+    $ usermod -a -G sudo batman
+	
+Set the password for the user
+
+    $ passwd username
