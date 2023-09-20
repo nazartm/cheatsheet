@@ -43,3 +43,7 @@ Kill ssh-agent in current terminal
 
     $ eval $(ssh-agent -k)
 
+Local Port Forwarding with OpenSSH:
+
+    # ssh -L local_port:destination_server_ip:remote_port ssh_server_hostname
+    $ ssh -L 1521:10.0.0.100:1521 nazar@my-ssh-server.net
