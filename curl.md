@@ -18,3 +18,7 @@ With jq:
     -u "client-id:client-secret" \
     -d 'grant_type=client_credentials' \
     | jq -r '.access_token')
+
+Timing a request:
+
+    $ curl -w 'Total: %{time_total}s\n' http://localhost:8080
