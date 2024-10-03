@@ -9,7 +9,7 @@ Generate SSH key:
 
 Add public key to authorized keys on remote:
 
-	cat id_rsa.pub | ssh user@remote.com 'cat >> .ssh/authorized_keys'
+	ssh user@example.net 'mkdir .ssh && cat >> .ssh/authorized_keys' < ~/.ssh/id_rsa.pub
 	
 Fingerprint key:
 
