@@ -58,6 +58,10 @@ Sudo with current users environment variables:
 ## Execute as another user
 
     $ sudo -u admin whoami
+
+## See ports a server is listening on
+
+    $ ss -4ntpl
    
 ## Tracing 
 
