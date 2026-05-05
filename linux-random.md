@@ -61,7 +61,12 @@ Sudo with current users environment variables:
 
 ## See ports a server is listening on
 
-    $ ss -4ntpl
+    $ ss -tuln
+
+## Find which process is listening on specific port
+
+   $ lsof -i :9500
+   $ ps aux | grep <PID>
    
 ## Tracing 
 
