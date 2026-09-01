@@ -73,6 +73,10 @@ Sudo with current users environment variables:
     $ tcptraceroute my-site.com 443
     # equivalent to
     $ traceroute -T -O info -p 443  my-site.com
+
+## See processes of a user
+
+    $ ps -u <USER> -f
     
 ## Setting up user:
 
